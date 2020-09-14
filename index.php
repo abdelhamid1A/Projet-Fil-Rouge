@@ -46,7 +46,7 @@ $row = mysqli_fetch_array($result);
      <!-- start ads  -->
      <div class="ads">
 <?php 
-echo ' <img src="ads/'.$row['image'].'" class="card-img-top" alt="...">'
+echo ' <img src="ads/'.$row['image'].'" class="card-img-top my-5" alt="...">'
 ?>
      </div>
      <!-- end ads  -->

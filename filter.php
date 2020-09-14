@@ -105,6 +105,9 @@ if (mysqli_num_rows($result)>0):
     </div> -->
 
 </div>
+<div class="scrollup">
+       <i class="fa fa-chevron-up fa-3x scroll-up"></i> 
+    </div>
 <?php
 include('includes/footer.php')
 ?>

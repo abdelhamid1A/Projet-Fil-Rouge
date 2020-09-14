@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
                 $imgNewName = $lastIdValue . $image_name ;
                 //   die(print_r($imgNewName));
                 // verify size of image 
-                if($image_size > 100000){
+                if($image_size > 1000000){
                     $errors = 'la taille de votre image est tres grand';
                 }
                 else{
@@ -66,8 +66,8 @@ if(isset($_POST['submit'])){
                     
                     if(query($sql)){
                         echo '<div class="alert alert-success"">votre compte est bien enregiste</div>';
-                        move_uploaded_file($image_temp, $_SERVER['DOCUMENT_ROOT'] .'\rouge\upload\\' . $imgNewName);
-                        redirect('../index.php');
+                        move_uploaded_file($image_temp, $_SERVER['DOCUMENT_ROOT'] .'\rougefin\upload\\' . $imgNewName);
+                        redirect('index.php');
                     }else{
                         echo '<div class="alert alert-danger">votre compte n\'est pas enregiste</div>';
                         echo "Error: " . $sql;
